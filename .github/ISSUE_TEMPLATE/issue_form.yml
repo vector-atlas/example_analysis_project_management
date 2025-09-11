@@ -1,0 +1,28 @@
+name: Help wanted
+description: Issue form for needing help.
+title: "Short precise clear title"
+labels: ["help"]
+assignees:
+  - geryan
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the form for when I need help with something
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explain the problem in 1-5 sentences, with only as much context as you need.
+      placeholder: I tried to do x, but y happened. I don't understand z.
+      value: I tried to do x, but y happened. I don't understand z.
+    validations:
+      required: true
+  - type: checkboxes
+    id: clean_session
+    attributes:
+      label: I tried again in a clean R session
+      description: I.e., I removed all data with `rm(list = ls())`, then restarted R (cmd + shift + 0 on Windows), before re-running my code cleanly from scratch.
+      options:
+        - label: I tried again in a clean R session
+          required: true
