@@ -15,7 +15,34 @@ body:
       label: Description
       description: Explain the problem in 1-5 sentences, with only as much context as you need.
       placeholder: I tried to do x, but y happened. I don't understand z.
-      value: I tried to do x, but y happened. I don't understand z.
+      value: I tried to do x, but y happened. I don't understand z. The expected result was q.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce_the_problem
+    attributes:
+      label: Reproduce the problem
+      description: Code or steps to reproduce the problem. This should be minimal and complete.
+    validations:
+      required: true
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: Actual Result
+      description: Error message or actual result
+    validations:
+      required: true
+  - type: textarea
+    id: help
+    attributes:
+      label: What?
+      description: What have I tried, and what do I need help with?
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What software versions am I using? Do I need to paste `sessionInfo()` here? What other important details are there?
     validations:
       required: true
   - type: checkboxes
