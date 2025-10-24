@@ -18,7 +18,7 @@ So how do we do it?
 
 ## Set the desired output format
 
-The default output type for `.Rmd` files is `html-document`. Change that. In the yaml header block specify that you want markdown, and then further specify the variant as follows:
+The default output type for `.Rmd` files is `html-document`. Change that. In the yaml header block specify that you want markdown using `md-document`, and then further specify the variant as follows:
 
 ```{r, eval=FALSE}
 ---
@@ -30,8 +30,7 @@ output:
 ```
 
 ## The rest is automated
-
-Once you make that change then the rest is taken care of.
+Once you make that change then the rest is taken care of. You can write your documentation in the R Markdown file and then direct your collaborators to read the rendered version on github by linking them to the `.md` output.
 
 ```{r}
 item <- rlnorm(1)
