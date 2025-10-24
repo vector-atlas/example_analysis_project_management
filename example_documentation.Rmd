@@ -57,12 +57,14 @@ As usual, maths notation also works
 $\mu$ is mathematical notation
 
 Equation blocks work as per usual
-$$N \sim Pois(\lambda)\\
-exp(\lambda) \gets \alpha + \beta_1 X1 + \beta_2 X2 + \epsilon_{i,v}$$
+$$N \sim Pois(\lambda)$$
+$$exp(\lambda) \gets \alpha + \beta_1 X1 + \beta_2 X2 + \epsilon_{i,v}$$
 
 ## Curious detail for collaborators
 Part of the motivation for finding this solution is to include documentation within the repo in a form that it can be read on github by collaborators.
 
-It is possible (though perhaps not desirable) for a collaborator to directly change text in the `.md` doc as you would for the `Readme.md` for example. Any changes would be overwritten in a local repo the next time the parent `.Rmd` file is knitted. That change would be visible in the Diff, though the local repo owner may not be expecting them.  For that reason, it is probably better for issues to be raised citing the `.Rmd` code?
+It is possible (though perhaps not desirable) for a collaborator to directly change text in the `.md` doc as you would for the `Readme.md` for example. However, any changes would be overwritten in a local repo the next time the parent `.Rmd` file is knitted. That subsequent change caused by knitting the source `.Rmd` would be visible in the Diff, though the local repo owner may not be expecting them.  
+
+For that reason, it is probably better for issues to be raised or changes proposed citing the `.Rmd` code.
 
 
