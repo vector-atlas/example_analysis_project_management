@@ -10,7 +10,7 @@ be the subject of detailed feedback from collaborators or supervisors,
 then HTML, PDF or MS Word are not ideal formats because: 1) you can’t
 comfortably read the rendered file on github 2) if you want to comment
 the rendered doc, its a further step to link those comments or issues
-back to the source code
+back to the source code. [Wait, but can I proposed changes in the `.md` file then? How does that work?]
 
 The ideal format would look more like your repo `Readme.md`, which
 renders the formatting of headers, equations, hyperlinks, etc, for human
